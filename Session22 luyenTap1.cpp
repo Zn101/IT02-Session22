@@ -99,7 +99,7 @@ void editStudent(Student students[], int count) {
         if (students[i].id == id) {
             printf("Nhap ten moi cho sinh vien (ten cu: %s): ", students[i].name);
             getchar();
-            fgets(students[i].name, 100_NAME_LENGTH, stdin);
+            fgets(students[i].name, 100, stdin);
             fflush(stdin);
             printf("Nhap tuoi moi cho sinh vien (tuoi cu: %d): ", students[i].age);
             scanf("%d", &students[i].age);
